@@ -13,6 +13,28 @@ main{
 }
 main img{
   width:7%;
-  height:100vh;
+  height:calc(100vh - 1px);
   border-right:red 1px solid;
 }
+.onCl{
+  width:900px;
+  height:100%;
+}
+.onOff{
+  width:var(--widthPr);
+  height:calc(100vh - 15px);
+  border-right:red 1px solid;
+}
+:root{
+  --widthPr:2%;
+}
+@media(min-width:1800px){
+  :root{
+    --widthPr:3.7%;
+  }
+}
+/* @media(min-width:1279px){
+  :root{
+    --widthPr:2%;
+  }
+} */
